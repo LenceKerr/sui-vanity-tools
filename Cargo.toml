@@ -1,7 +1,7 @@
 [package]
 name = "sui-vanity-tools"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -9,3 +9,7 @@ edition = "2021"
 ring = "0.16.20"
 sui-keys = { git = "https://github.com/MystenLabs/sui.git" }
 sui-types = { git = "https://github.com/MystenLabs/sui.git" }
+time = "0.3.36"
+rayon = "1.7.0"            # For parallel processing
+num_cpus = "1.15.0"        # To dynamically get the number of CPU cores
+bech32 = "0.8.0"
